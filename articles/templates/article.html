@@ -1,23 +1,23 @@
-﻿<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Статьи</title>
-		<link rel="stylesheet" href="{{ STATIC_URL }}css/article.css">
-	</head>
-	<body>
-		<div class="article">
-		<h4 class = "to-archive"><a href = "../../registration">Регистрация</a></h4>
-		<h4 class = "to-archive"><a href = "../../login">Вход</a></h4>
-		<h4 class = "to-archive"><a href = "../../">Назад</a></h4>
-			<div class="one-post">
-				<h2 class="post-title">{{ post.title }}</h2>
-				<div style="clear: both"></div>
-				<div class="article-info">
-					<div class="article-author">{{ post.author.username }}</div>
-					<div class="article-created-date">{{ post.created_date }}</div> 
-				</div>
-				<p class="article-text">{{ post.text }}</p>
-			</div>
-		</div>
-	</body>
+    <head>
+        <title>Статья &mdash; {{ post.title }}</title>
+        <link rel="stylesheet" href="/static/css/article.css" type="text/css">
+            </head>
+    <body class="article">
+        <div class="article-header">
+            <img src="/static/img/logo.png"/ width=318 height=65>
+                <div class = "ref">
+                    <p><a href="/archive" style="color: white ">Все статьи</a></p>
+                </div>
+                </div>
+        <div class="one-post">
+            <h2 class="post-title">{{ post.title }}</h2>
+            <div class="article-info">
+                <div class="article-author">{{ post.author.username }}</div>
+                <div class="article-created-date">{{ post.created_date }}</div>
+            </div>
+            <p class="article-text">{{ post.text }}</p>
+        </div>
+    </body>
 </html>
