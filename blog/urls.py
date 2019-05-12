@@ -7,6 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'articles.views.archive', name='home'),
+    url(r'^article/new/', 'articles.views.create_post', name='create_post'),
     url(r'^article/(?P<article_id>\d+)$','articles.views.get_article',name='get_article'),
     # url(r'^blog/', include('blog.foo.urls')),
 
