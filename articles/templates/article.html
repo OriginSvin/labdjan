@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>
-			richardTHEbestDADA
+			richardTHEbest
 		</title>
 		<link rel="stylesheet" href="{{ STATIC_URL }}css/article.css">
 	</head>
@@ -10,16 +10,16 @@
 		</div>
 		<div class="archive">
 		<div class="archive">
-		{% for post in posts %}
+		
 			<div class="one-post">
 				<h2 class="post-title"><a href = /article/{{post.id}}>{{ post.title }}</a></h2>
 				<div class="article-info">
 					<div class="article-author">{{ post.author.username }}</div>
 					<div class="article-created-date">{{ post.created_date }}</div>
 				</div>
-			<p class="article-text">{{ post.get_excerpt }}</p>
+			<p class="article-text">{{ post.text }}</p>
 			</div>
-		{% endfor %}
+		
 		</div>
 	</body>
 </html>

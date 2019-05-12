@@ -1,0 +1,57 @@
+body {
+	background: #1abc9c;
+	font-family: Tahoma, Arial, serif;
+	color: #ffffff;
+}
+table {
+	border-collapse: collapse;
+}
+p, h4 {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+ul, ol {
+	margin: 0
+}
+table tr td {
+	padding: 5px
+}
+table {
+	width:100%
+}
+.archive {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.post-title a { 
+   color: #ffffff;
+}
+ .article-author {
+	 width: 50%;
+	 float: left;
+}
+.article-created-date {
+    text-align: right;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
