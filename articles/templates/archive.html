@@ -19,8 +19,11 @@
 				<div class="article-created-date">{{ post.created_date }}</div> 
 			</div>
 			<p class="article-text">{{ post.get_excerpt }}</p>
+			<div class="one-post-shadow"></div>
 		 </div>
 	{% endfor %}
     </div>
+	<script src="{{ STATIC_URL }}js/jquery-3.3.1.min.js"></script>
 	<script src="{{ STATIC_URL }}js/helloworld.js"></script>
+	<script src="{{ STATIC_URL }}js/highlight-post.js"></script>
 </body>
