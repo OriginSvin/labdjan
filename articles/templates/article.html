@@ -1,25 +1,23 @@
+﻿<!DOCTYPE html> 
 <html>
 	<head>
-		<title>
-			richardTHEbest
-		</title>
+		<title>Статьи</title>
 		<link rel="stylesheet" href="{{ STATIC_URL }}css/article.css">
 	</head>
 	<body>
-		<div class="header">
-		</div>
-		<div class="archive">
-		<div class="archive">
-		
+		<div class="article">
+		<h4 class = "to-archive"><a href = "../../registration">Регистрация</a></h4>
+		<h4 class = "to-archive"><a href = "../../login">Вход</a></h4>
+		<h4 class = "to-archive"><a href = "../../">Назад</a></h4>
 			<div class="one-post">
-				<h2 class="post-title"><a href = /article/{{post.id}}>{{ post.title }}</a></h2>
+				<h2 class="post-title">{{ post.title }}</h2>
+				<div style="clear: both"></div>
 				<div class="article-info">
 					<div class="article-author">{{ post.author.username }}</div>
-					<div class="article-created-date">{{ post.created_date }}</div>
+					<div class="article-created-date">{{ post.created_date }}</div> 
 				</div>
-			<p class="article-text">{{ post.text }}</p>
+				<p class="article-text">{{ post.text }}</p>
 			</div>
-		
 		</div>
 	</body>
 </html>
